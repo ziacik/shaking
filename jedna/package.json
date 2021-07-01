@@ -1,0 +1,21 @@
+{
+  "name": "jedna",
+  "sideEffects": false,
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/jedna.umd.js",
+  "module": "dist/src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && tsc && webpack && cat dist/src/*.d.ts > dist/jedna.umd.d.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "declaration-bundler-webpack-plugin": "^1.0.3",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.4",
+    "webpack": "^5.41.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
